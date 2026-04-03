@@ -1,0 +1,25 @@
+{
+  "timestamp": "03_04_2026_03_02_07",
+  "macro_f1_val_arxiv": 0.8321801471840701,
+  "macro_f1_test_arxiv": 0.8323744231603001,
+  "macro_f1_uam": "sin ground truth",
+  "best_epoch": 8,
+  "uam_articles_total": 1112,
+  "uam_articles_english": 746,
+  "hyperparameters": {
+    "max_len": 512,
+    "batch_size": 16,
+    "lr": 2e-05,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1,
+    "epochs_run": 10,
+    "lora_r": 16,
+    "lora_alpha": 32,
+    "lora_dropout": 0.1,
+    "lora_targets": [
+      "query",
+      "value"
+    ]
+  },
+  "confusion_pattern": "cs.AI vs cs.LG persiste"
+}
