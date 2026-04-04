@@ -1,0 +1,29 @@
+{
+  "model": "deepseek-r1:14b",
+  "provider": "ollama",
+  "temperature": 0.0,
+  "n_documents": 746,
+  "n_invalid": 113,
+  "pct_invalid": 15.15,
+  "total_time_min": 62.609,
+  "avg_time_sec": 5.024,
+  "macro_f1_uam": null,
+  "distribution": {
+    "cs.AI": 118,
+    "cs.CL": 47,
+    "cs.CR": 7,
+    "cs.CV": 38,
+    "cs.DS": 92,
+    "cs.IT": 9,
+    "cs.LG": 58,
+    "cs.NA": 148,
+    "cs.RO": 6,
+    "cs.SY": 110
+  },
+  "agreement_bilstm": null,
+  "agreement_scibert": null,
+  "agreement_all3": null,
+  "n_candidates_graph": null,
+  "prompt_version": "v1",
+  "timestamp": "2026-04-04T00:57:10.544556"
+}
