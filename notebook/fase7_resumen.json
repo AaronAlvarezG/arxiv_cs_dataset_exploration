@@ -1,0 +1,25 @@
+{
+  "n_articulos_uam": 746,
+  "concordancia_bilstm_scibert": 63.57142857142857,
+  "concordancia_bilstm_zeroshot": 52.42857142857143,
+  "concordancia_scibert_zeroshot": 50.714285714285715,
+  "concordancia_tres_modelos": 40.142857142857146,
+  "n_confianza_alta": 663,
+  "n_confianza_media": 79,
+  "n_confianza_baja": 4,
+  "distribucion_etiqueta_final": {
+    "cs.AI": 247,
+    "cs.NA": 175,
+    "cs.SY": 115,
+    "cs.DS": 65,
+    "cs.CL": 56,
+    "cs.CV": 30,
+    "cs.CR": 24,
+    "cs.LG": 16,
+    "cs.IT": 11,
+    "cs.RO": 7
+  },
+  "politica_decision": "mayoria; empate: SciBERT > Zero-shot > BiLSTM",
+  "ground_truth_disponible": false,
+  "hallazgo_principal": "BiLSTM nunca predice cs.LG; Zero-shot asigna 58 articulos a cs.LG sugiriendo sesgo lexical en modelos supervisados"
+}

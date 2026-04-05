@@ -1,0 +1,84 @@
+{
+  "version": "con_aug",
+  "modelo": "TF-IDF + Regresion Logistica",
+  "vectorizador": {
+    "max_features": 50000,
+    "ngram_range": [
+      1,
+      2
+    ],
+    "sublinear_tf": true,
+    "min_df": 2,
+    "stop_words": "english"
+  },
+  "clasificador": {
+    "C": 1.0,
+    "max_iter": 1000,
+    "solver": "saga",
+    "class_weight": "calculado"
+  },
+  "split": {
+    "train_size": 0.8,
+    "val_size": 0.2,
+    "random_seed": 42,
+    "stratify": true
+  },
+  "n_train": 570450,
+  "n_val": 142613,
+  "n_uam": 746,
+  "clases": [
+    "cs.AI",
+    "cs.CL",
+    "cs.CR",
+    "cs.CV",
+    "cs.DS",
+    "cs.IT",
+    "cs.LG",
+    "cs.NA",
+    "cs.RO",
+    "cs.SY"
+  ],
+  "pesos_clase": {
+    "cs.CL": 0.884,
+    "cs.DS": 1.8266,
+    "cs.NA": 1.7812,
+    "cs.CV": 0.4494,
+    "cs.IT": 1.4582,
+    "cs.SY": 1.7178,
+    "cs.AI": 1.4634,
+    "cs.LG": 0.4361,
+    "cs.RO": 1.5353,
+    "cs.CR": 1.5647
+  },
+  "metricas_val_arxiv": {
+    "macro_f1_val_arxiv": 0.8194,
+    "macro_precision_val_arxiv": 0.8044,
+    "macro_recall_val_arxiv": 0.8375,
+    "f1_por_clase": {
+      "cs.AI": 0.526,
+      "cs.CL": 0.8547,
+      "cs.CR": 0.8553,
+      "cs.CV": 0.8898,
+      "cs.DS": 0.882,
+      "cs.IT": 0.8736,
+      "cs.LG": 0.772,
+      "cs.NA": 0.8808,
+      "cs.RO": 0.8522,
+      "cs.SY": 0.8073
+    }
+  },
+  "distribucion_uam": {
+    "cs.AI": 265,
+    "cs.NA": 146,
+    "cs.SY": 112,
+    "cs.CL": 57,
+    "cs.DS": 57,
+    "cs.CR": 32,
+    "cs.CV": 32,
+    "cs.LG": 21,
+    "cs.IT": 14,
+    "cs.RO": 10
+  },
+  "ground_truth_uam": false,
+  "hallazgo_principal": "Confusion cs.AI vs cs.LG — patron persistente en todos los modelos"
+}
